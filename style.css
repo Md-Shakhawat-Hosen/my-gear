@@ -10,7 +10,13 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-/* Shared styles are end here */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
 .primary-btn{
     border-radius: 41px;
    background: #E02C6D;
@@ -24,10 +30,12 @@ font-weight: 700;
 .btn-arrow{
     margin-left: 5px;
 }
+/* Shared styles are end here */
+
 
 /* Navbar section style start from here */
 header{
-    padding: 87px 120px;
+    padding: 87px 240px;
    
 
 }
@@ -97,6 +105,49 @@ margin:10px 0px;
 }
 /* Banner section end here */
 
+/* company logos section start here */
+/* .company-logo-container{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding: 54px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 61px;
+} */
+/* company logos section end here */
+
+/* popular collection section start */
+.popular-container{
+    margin-top: 100px;
+}
+.popular-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card{
+    padding: 17px 15px;
+    width: 329px;
+    border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card img{
+    width: 100%;
+}
+.popular-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.8rem;
+}
+.star{
+    color:#FB8200;
+}
+.card .card-des{
+    width: 50%;
+}
+/* popular collection section end */
+
 
 /* Media query for small devices start*/
 @media screen and (max-width:576px) {
@@ -123,9 +174,39 @@ margin:10px 0px;
    .banner-left-content h1{
     font-size: 1.75rem;
    }
-   
+
+   /* company section */
+   /* .company-logo-container{
+    border-top: none;
+    border-bottom: none;
+    display: grid;
+    justify-content: unset;
+    align-items: center;
+    gap: 50px;
+    grid-template-columns: repeat(4,50px);
+}
+ .company-logo-container img{
+    width: 80px;
+ } */
+
+
+ /* popular card section */
+ .popular-container{
+
+ }
+ 
+ .popular-cards{
+    justify-items: center;
+    grid-template-columns: 1fr;
+
+ }
+ .card{
+    
+ }
     
 }
+
+
 /* Media query for small devices end */
 
 
@@ -145,5 +226,9 @@ margin:10px 0px;
     text-align: center;
     width: 100%;
    }
+   .popular-cards{
+    grid-template-columns: 1fr 1fr;
+
+ }
 }
 /* Media query for medium devices  end*/

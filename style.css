@@ -146,7 +146,22 @@ box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 .card .card-des{
     width: 50%;
 }
+
 /* popular collection section end */
+
+/* product feature container start */
+
+.feature-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+
+.left-content{
+}
+/* product feature container end */
 
 
 /* Media query for small devices start*/
@@ -201,8 +216,25 @@ box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 
  }
  .card{
-    
+    width: 70%;
+    margin: 0 auto;
  }
+
+ /* product feature */
+ .feature-container{
+    flex-direction: column-reverse;
+ }
+ .left-content{
+    width: 80%;
+    margin: 0 auto;
+ }
+.left-content img{
+    width: 100%;
+}
+.right-content{
+    width: 80%;
+    margin: 0 auto;
+}
     
 }
 

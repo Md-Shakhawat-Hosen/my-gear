@@ -14,7 +14,7 @@
 .primary-btn{
     border-radius: 41px;
    background: #E02C6D;
-   padding:24px;
+   padding: 10px 24px;
    border: 0;
    color: #FFF;
 font-family: Poppins;
@@ -73,9 +73,77 @@ font-weight: 700;
     justify-content: space-between;
     align-items: center;
 }
+.banner-left-content h1{
+    color: #3A3A3A;
+font-family: Poppins;
+font-size: 3.25rem;
+font-weight: 700;
+line-height: 4.3rem;
+}
+.banner-left-content p{
+    color: #3A3A3A;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+margin:10px 0px;
+}
+
 .banner-right-content{
     padding: 40px;
      background-image: url('./images/Circle\ design.svg');
    background-repeat: no-repeat;
+   background-size: contain;
 }
 /* Banner section end here */
+
+
+/* Media query for small devices start*/
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+   .banner-right-content img{
+    width: 200px;
+    height: 188px;
+   }
+   .banner-left-content{
+    text-align: center;
+    width: 100%;
+   }
+   .banner-left-content h1{
+    font-size: 1.75rem;
+   }
+   
+    
+}
+/* Media query for small devices end */
+
+
+
+/* Media query for medium devices start*/
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-left-content{
+    text-align: center;
+    width: 100%;
+   }
+}
+/* Media query for medium devices  end*/
